@@ -94,6 +94,7 @@ class ImageCaptioner(nn.Module):
 
   def predict(self,img_path):
     input_image = Image.open(img_path)
+    input_image = input_image.convert('RGB')
     input_tensor = self.processor(input_image)
     input_batch = input_tensor.unsqueeze(0)
     with torch.no_grad():
