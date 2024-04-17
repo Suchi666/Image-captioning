@@ -1,0 +1,4 @@
+CNN-RNN/train_data.json
+CNN-RNN/vocabulary.json
+trained_model_B.pth
+trained_model_A.pth
